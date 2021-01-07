@@ -11,18 +11,18 @@ h1 {
 }
 h2 {
   margin: 0px;
-  font-size: 40px;
+  font-size: 45px;
 }
 h3 {
-  width: 200px;
+  width: 190px;
   padding: 10px;
+  padding-top: 20px;
   padding-right: 10px;
-  border-right: 2px solid;
   margin: 0px;
   font-size: 25px;
 }
 h4 {
-  margin: 5px;
+  margin: 10px;
   font-size: 30px;
 }
 h5 {
@@ -40,27 +40,37 @@ body {
   font-size: 19px;
 }
 #목차 ol {
-  width: 150px;
+  width: 140px;
   padding: 50px;
-  padding-top: 10px;
+  padding-top: 0px;
   padding-bottom: 10px;
   padding-right: 20px;
-  border-right: 2px solid;
   margin: 0px;
   font-size: 25px;
-  height: 600px;
 }
 #grid{
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 210px 1fr;
 }
 #전체내용{
-  margin: 30px;
-  margin-top: 20px;
-}
-#세부내용{
-  margin-left: 20px;
+  padding: 30px;
+  padding-top: 20px;
+  border-left: 1px  solid;
 }
 #세부내용 ul {
   margin: 0px;
+}
+@media(max-width:750px) {
+  #grid{
+    display: block;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h5 {
+    font-size: 5px;
+  }
+  #목차 ol {
+    border-bottom: none;
+  }
 }
