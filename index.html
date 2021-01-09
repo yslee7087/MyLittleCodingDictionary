@@ -1,34 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>mylittlecodingdictionary_home</title>
+  <title>My Little Coding Dictionary</title>
   <meta charset="utf-8">
-  <link href="style.css" rel="stylesheet" type=" text/css">
+  <style>
+    a {
+        color:black;
+    }
+    h1 {
+      padding: 5px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid;
+      margin: 0px;
+      font-size: 55px;
+      text-align: center;
+    }
+    h2 {
+      margin: 0px;
+      font-size: 45px;
+    }
+    h3 {
+      width: 190px;
+      padding: 10px;
+      padding-top: 20px;
+      padding-right: 10px;
+      margin: 0px;
+      font-size: 25px;
+    }
+    h4 {
+      margin: 0px;
+      font-size: 30px;
+    }
+    h5 {
+      margin: 5px;
+      margin-bottom: 0px;
+      text-align: right;
+    }
+    h6 {
+      margin: 0px;
+      margin-bottom: 10px;
+      margin-left: 30px;
+    }
+    p {
+      margin: 0px;
+    }
+    body {
+      margin: 0px;
+      background: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 19px;
+    }
+    ol {
+      width: 75px;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    ul {
+      width: 370px;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #전체내용{
+      display: block;
+      padding: 30px;
+      font-size: 25px;
+      text-align: center;
+    }
+    #전체내용 h4 {
+      margin: 0px;
+      text-align: center;
+    }
+    @media(max-width:750px) {
+      h1 {
+        font-size: 35px;
+      }
+    }
+  </style>
 </head>
 <body>
   <h5>created by Yuseop</h5>
   <h1><a href="index.html" style="text-decoration:none">My Little Coding Dictionary</a></h1>
-  <div id="grid">
-    <div id="목차">
-      <h3>프로그래밍 언어</h3>
-      <ol>
-        <li><a href="HTML.html">HTML</a></li>
-        <li><a href="CSS.html">CSS</a></li>
-        <li><a href="Python.html">Python</a></li>
-      </ol>
-    </div>
-    <div id="전체내용">
-      <div id="세부내용">
-        <h4>코딩 관련 웹사이트</h4>
-        <ul>
-          <li><a href="https://nomadcoders.co/" title="nomadcoders.co" target="_blank">노마드 코더 Nomad Coders</a></li>
-          <li><a href="https://www.ebssw.kr/" title="ebssw.kr" target="_blank">이솦 | EBS 소프트웨어</a></li>
-          <li><a href="https://www.w3schools.com/" title="w3schools.com" target="_blank">W3Schools Online Web Tutorials</a></li>
-          <li><a href="https://repl.it/~" title="Repl.it" target="_blank">Repl.it</a></li>
-          <li><a href="https://github.com/" title="GitHub.com" target="_blank">GitHub</a></li>
-        </ul>
-      </div>
-    </div>
+  <input type="button" value="dark" onclick="
+  document.querySelector('body').style.backgroundColor = 'black';
+  ">
+  <div id="전체내용">
+    <h4>프로그래밍 언어</h4>
+    <ol>
+      <li><a href="HTML.html">HTML</a></li>
+      <li><a href="CSS.html">CSS</a></li>
+      <li><a href="Python.html">Python</a></li>
+    </ol>
+    <br>
+    <h4>코딩 관련 웹사이트</h4>
+    <ul>
+      <li><a href="https://nomadcoders.co/" title="nomadcoders.co" target="_blank">노마드 코더 Nomad Coders</a></li>
+      <li><a href="https://www.ebssw.kr/" title="ebssw.kr" target="_blank">이솦 | EBS 소프트웨어</a></li>
+      <li><a href="https://www.w3schools.com/" title="w3schools.com" target="_blank">W3Schools Online Web Tutorials</a></li>
+      <li><a href="https://repl.it/~" title="Repl.it" target="_blank">Repl.it</a></li>
+      <li><a href="https://github.com/" title="GitHub.com" target="_blank">GitHub</a></li>
+    </ul>
   </div>
 </body>
 </html>
