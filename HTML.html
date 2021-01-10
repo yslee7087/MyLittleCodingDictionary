@@ -5,40 +5,19 @@
   <title>My Little Coding Dictionary</title>
   <meta charset="utf-8">
   <link href="style.css" rel="stylesheet" type=" text/css">
+  <script src="color.js"></script>
 </head>
 <body>
   <h5>created by Yuseop</h5>
   <h1><a href="index.html" style="text-decoration:none">My Little Coding Dictionary</a></h1>
   <input id="dark_mode"type="button" value="dark" onclick="
-    var target = document.querySelector('body');
-    if(this.value ===  'dark'){
-      target.style.backgroundColor = 'black';
-      target.style.color = 'white';
-      this.value = 'light';
-
-      var alist = document.querySelectorAll('a');
-      var x = 0;
-      while(x < alist.length){
-      alist[x].style.color = 'white';
-      x = x + 1
-      }
-    } else {
-      target.style.backgroundColor = 'white';
-      target.style.color = 'black';
-      this.value = 'dark';
-
-      var alist = document.querySelectorAll('a');
-      var x = 0;
-      while(x < alist.length){
-      alist[x].style.color = 'black';
-      x = x + 1
-      }
-    }">
+    dark_mode(this);
+  ">
   <div id="grid">
     <div id="목차">
       <h3>프로그래밍 언어</h3>
       <ol>
-        <li><a href="HTML.html" style="color:blue;">HTML</a></li>
+        <li><a href="HTML.html">HTML</a></li>
         <li><a href="CSS.html">CSS</a></li>
         <li><a href="Python.html">Python</a></li>
       </ol>
