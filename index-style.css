@@ -26,9 +26,9 @@ h4 {
   font-size: 30px;
 }
 h5 {
+  display: inline;
   margin: 5px;
   margin-bottom: 0px;
-  text-align: right;
 }
 h6 {
   margin: 0px;
@@ -45,7 +45,7 @@ body {
   font-size: 19px;
 }
 ol {
-  width: 75px;
+  width: 100px;
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
